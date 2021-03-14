@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+
+
+<suite name="Inventory" >
+ <listeners>
+<listener class-name="com.extraPOSTest.utilities.Listeners" />
+</listeners>  
+
+<!-- 
+  <test name="Category">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_Category"/>
+    </classes>
+  </test> 
+ <test name="SubCategory">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_SubCategory"/>
+    </classes>
+  </test> 
+  
+  <test name="Brand">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_Brand"/>
+    </classes>
+    </test>
+    
+    <test name="Class">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_Class"/>
+    </classes>
+  </test> 
+  
+  <test name="Line">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_Line"/>
+    </classes>
+  </test> 
+  
+  <test name="Type">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+    <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_Type"/>
+    </classes>
+  </test>   
+  
+ <test name="LOV">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_LOV"/>
+    </classes>
+  </test> 
+ <test name="UDA">
+   <parameter name="browser" value="chrome"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_UDA"/>
+    </classes>
+  </test> 
+  <test name="IM">
+   <parameter name="browser" value="chrome"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_ItemMaster"/>
+    </classes>
+  </test>
+  <test name="PG">
+   <parameter name="browser" value="chrome"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_PurchaseGroup"/>
+    </classes>
+  </test>
+  <test name="Uom">
+   <parameter name="browser" value="chrome"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_UoM"/>
+    </classes>
+  </test>
+ -->
+  
+  <test name="Uom">
+   <parameter name="browser" value="firefox"/>
+    <classes> 
+     <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_UoM"/>
+    </classes>    
+  </test>
+</suite>    
+
+
+

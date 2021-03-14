@@ -1,0 +1,62 @@
+18:06:45.463 [main] INFO  com.extraPOSTest.resources.BaseClass - chrome driver instantiated succefully 
+18:06:48.649 [main] INFO  com.extraPOSTest.resources.BaseClass - driver has been initialized in userManagement class
+18:06:52.775 [main] INFO  com.extraPOSTest.resources.BaseClass - Login Successfully
+18:06:52.939 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approvals
+18:06:53.038 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Manintenace
+18:06:53.279 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approval Role Code
+18:06:57.145 [main] INFO  com.extraPOSTest.resources.BaseClass - Size of the ApprovalRoleCode List -->> 136
+18:06:59.441 [main] INFO  com.extraPOSTest.resources.BaseClass - Driver has closed
+12:56:13.359 [main] INFO  com.extraPOSTest.resources.BaseClass - chrome driver instantiated succefully 
+12:56:16.786 [main] INFO  com.extraPOSTest.resources.BaseClass - driver has been initialized in userManagement class
+12:56:21.174 [main] INFO  com.extraPOSTest.resources.BaseClass - Login Successfully
+12:56:21.308 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approvals
+12:56:21.409 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Manintenace
+12:56:21.537 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approval Role Code
+12:56:26.251 [main] INFO  com.extraPOSTest.resources.BaseClass - Size of the ApprovalRoleCode List -->> 136
+12:56:39.528 [main] INFO  com.extraPOSTest.resources.BaseClass - Driver has closed
+12:42:10.527 [main] INFO  com.extraPOSTest.resources.BaseClass - chrome driver instantiated succefully 
+12:42:16.857 [main] INFO  com.extraPOSTest.resources.BaseClass - driver has been initialized in userManagement class
+12:42:21.716 [main] INFO  com.extraPOSTest.resources.BaseClass - Login Successfully
+12:42:21.862 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approvals
+12:42:21.991 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Manintenace
+12:42:22.206 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approval Role Code
+12:42:26.362 [main] INFO  com.extraPOSTest.resources.BaseClass - Size of the ApprovalRoleCode List -->> 10
+12:42:26.808 [main] INFO  com.extraPOSTest.resources.BaseClass - inside the screenshot method for testcaseName is :createApprovalRoleCode
+12:42:27.284 [main] INFO  com.extraPOSTest.resources.BaseClass - Screen shot path C:\Users\Susmith\git\ExtraPOS-Test\xtrapostest\ExtraPOS-AutomationTest\Screenshots\createApprovalRoleCode-2021.03.12.12.42.27.png
+12:42:28.175 [main] INFO  com.extraPOSTest.resources.BaseClass - Driver has closed
+13:23:21.014 [main] INFO  com.extraPOSTest.resources.BaseClass - chrome driver instantiated succefully 
+13:23:25.024 [main] INFO  com.extraPOSTest.resources.BaseClass - driver has been initialized in userManagement class
+13:23:29.906 [main] INFO  com.extraPOSTest.resources.BaseClass - Login Successfully
+13:23:30.110 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approvals
+13:23:30.349 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Manintenace
+13:23:30.583 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Approval Role Code
+13:23:34.453 [main] INFO  com.extraPOSTest.resources.BaseClass - Size of the ApprovalRoleCode List -->> 136
+13:23:36.240 [main] INFO  com.extraPOSTest.resources.BaseClass - inside the screenshot method for testcaseName is :createApprovalRoleCode
+13:23:36.595 [main] INFO  com.extraPOSTest.resources.BaseClass - Screen shot path C:\Users\Susmith\git\ExtraPOS-Test\xtrapostest\ExtraPOS-AutomationTest\Screenshots\createApprovalRoleCode-2021.03.12.13.23.36.png
+13:23:37.407 [main] INFO  com.extraPOSTest.resources.BaseClass - Driver has closed
+13:24:44.357 [main] INFO  com.extraPOSTest.resources.BaseClass - chrome driver instantiated succefully 
+13:24:51.593 [main] INFO  com.extraPOSTest.resources.BaseClass - driver has been initialized in userManagement class
+13:24:55.998 [main] INFO  com.extraPOSTest.resources.BaseClass - Login Successfully
+13:24:56.289 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Inventory
+13:24:56.477 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Manintenace
+13:24:57.000 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully UoM
+13:25:01.170 [main] INFO  com.extraPOSTest.resources.BaseClass - Size of the UomCode List -->> 16
+13:25:02.980 [main] INFO  com.extraPOSTest.resources.BaseClass -  :: UOMCode is  -> STUOM1012345678901234567890
+13:25:07.356 [main] INFO  com.extraPOSTest.resources.BaseClass - Inside the Max Length uomCode Validation
+13:25:07.374 [main] INFO  com.extraPOSTest.resources.BaseClass - There is proper validation for Max: Length Uom field
+13:25:07.585 [main] INFO  com.extraPOSTest.resources.BaseClass - Save Actions, but some errrors are present
+13:25:07.606 [main] INFO  com.extraPOSTest.resources.BaseClass - proper msg for save action(can not save)
+13:25:07.959 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully HomeButton
+13:25:08.105 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Tick
+13:25:08.316 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Uom
+13:25:08.387 [main] INFO  com.extraPOSTest.resources.BaseClass - Inside the finally :: UOMCode is  -> STUOM1012345678901234567890
+13:25:08.397 [main] INFO  com.extraPOSTest.resources.BaseClass -  :: UOMCode is  -> STUOM10123456789012hhhhhhh
+13:25:13.377 [main] INFO  com.extraPOSTest.resources.BaseClass - Inside the Max Length uomCode Validation
+13:25:13.397 [main] INFO  com.extraPOSTest.resources.BaseClass - There is proper validation for Max: Length Uom field
+13:25:13.719 [main] INFO  com.extraPOSTest.resources.BaseClass - Save Actions, but some errrors are present
+13:25:13.755 [main] INFO  com.extraPOSTest.resources.BaseClass - proper msg for save action(can not save)
+13:25:14.161 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully HomeButton
+13:25:14.303 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Tick
+13:25:14.484 [main] INFO  com.extraPOSTest.resources.BaseClass - Clicked succefully Uom
+13:25:14.504 [main] INFO  com.extraPOSTest.resources.BaseClass - Inside the finally :: UOMCode is  -> STUOM10123456789012hhhhhhh
+13:25:15.522 [main] INFO  com.extraPOSTest.resources.BaseClass - Driver has closed
