@@ -84,7 +84,7 @@
  -->
   
   <test name="Uom">
-   <parameter name="browser" value="firefox"/>
+   <parameter name="browser" value="chrome"/>
     <classes> 
      <class name="com.extraPOSTest.testCases.inventory.maintenance.TC_UoM"/>
     </classes>    

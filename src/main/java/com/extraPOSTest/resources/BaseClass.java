@@ -11,8 +11,22 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.NoSuchElementException;
+import java.util.Properties;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
+
+import javax.mail.Address;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Multipart;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -44,6 +58,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import jdk.internal.org.jline.utils.Log;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.commons.mail.*;
 
 public class BaseClass {
 
@@ -186,6 +201,86 @@ e.printStackTrace();
 		
 		return wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
 	}
+	
+	
+	
+	
+	
+	
+	public void attachEmailReport(String attachmentPath, String formName) throws EmailException, AddressException {
+		
+		
+		//authentication info
+		final String username = "susmith.surendran@acsesolutions.com";
+		final String password = "Welcome@123456";
+		String fromEmail = "susmith.surendran@acsesolutions.com";
+		String toEmail = "mailtosusmith@gmail.com";
+
+		Properties properties = new Properties();
+		properties.put("mail.smtp.auth", "true");
+		properties.put("mail.smtp.starttls.enable", "true");
+		properties.put("mail.smtp.host", "smtp.acsesolutions.com");
+		properties.put("mail.smtp.port", "587");
+
+		
+			
+		
+		Address[] cc = new Address[] {new InternetAddress("mailtosusmith@gmail.com"),
+				new InternetAddress("s.susmith08@gmail.com"), 
+				new InternetAddress("abinandh.krishnan@acsesolutions.com")};
+		
+		
+		
+		
+		Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
+			protected PasswordAuthentication getPasswordAuthentication() {
+				return new PasswordAuthentication(username,password);
+			}
+		});
+		
+		//Start our mail message
+		MimeMessage msg = new MimeMessage(session);
+		try {
+			msg.setFrom(new InternetAddress(fromEmail));
+			msg.addRecipients(Message.RecipientType.TO, cc);
+			msg.setSubject("Automation Test Results");
+
+			Multipart emailContent = new MimeMultipart();
+
+			//Text body part
+			MimeBodyPart textBodyPart = new MimeBodyPart();
+			textBodyPart.setText(formName);
+
+			//Attachment body part.
+			MimeBodyPart pdfAttachment = new MimeBodyPart();
+			pdfAttachment.attachFile(attachmentPath);
+
+			//Attach body parts
+			emailContent.addBodyPart(textBodyPart);
+			emailContent.addBodyPart(pdfAttachment);
+
+			//Attach multipart to message
+			msg.setContent(emailContent);
+
+			Transport.send(msg);
+			System.out.println("Sent Mail");
+		} catch (MessagingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+
+
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 

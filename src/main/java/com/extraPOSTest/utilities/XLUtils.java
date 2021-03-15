@@ -403,7 +403,7 @@ public void printOutPutExcel(HashMap<String,ArrayList<String>> finalResultMaps, 
 
 public static String createOutPutExcel(String excellLocation,String sheetName) throws IOException
 {
-	String timeStamp = new SimpleDateFormat("dd.MM.yyyy_HH.mm.ss").format(new Date());// time stamp
+	String timeStamp = new SimpleDateFormat("YYYY-MM-dd_HH-mm-ss").format(new Date());// time stamp
 	String pathName = "";
 	OutputStream fileOut = null;
 	try {

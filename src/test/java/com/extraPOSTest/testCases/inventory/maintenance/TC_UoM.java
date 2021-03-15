@@ -6,10 +6,14 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+import javax.mail.internet.AddressException;
+
+import org.apache.commons.mail.EmailException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -62,7 +66,11 @@ public class TC_UoM extends BaseClass{
 		System.out.println("outPutExcellLocation :"+outPutExcellLocation);
 	}
 	
-	
+	@AfterSuite
+	public void sentEmail() throws EmailException, AddressException
+	{
+		attachEmailReport(outPutExcellLocation,"Inventory Excel Report");
+	}
 	
 	
 	@Parameters("browser")
